@@ -15,8 +15,13 @@ import {MatCardModule} from '@angular/material/card'
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { CrudComponent } from './views/product/crud/crud.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component'
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { RedDirective } from './directives/red.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component'
+import {MatButtonModule} from '@angular/material/button'
+import {MatSnackBarModule} from '@angular/material/snack-bar'
 
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -26,7 +31,9 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
     NavComponent,
     HomeComponent,
     CrudComponent,
-    ProductCrudComponent
+    ProductCrudComponent,
+    RedDirective,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,11 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule
+
 
   ],
   providers: [],
