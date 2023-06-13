@@ -1,7 +1,7 @@
+import { Product } from './../product.model';
 import { ProductService } from './../product.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Product } from '../product.model';
 
 @Component({
   selector: 'app-product-create',
@@ -11,8 +11,8 @@ import { Product } from '../product.model';
 export class ProductCreateComponent {
 
   product: Product = {
-    name: 'Produto de teste',
-    price: 125.98
+    name: '',
+    price: null
   }
   
   constructor(private ProductService: ProductService,
