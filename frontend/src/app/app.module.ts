@@ -12,7 +12,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatCardModule} from '@angular/material/card'
-import {MatListModule} from '@angular/material/list';
+import {MatList, MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { CrudComponent } from './views/product/crud/crud.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
@@ -25,6 +25,8 @@ import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table'
 
 
 
@@ -54,7 +56,10 @@ import { ProductReadComponent } from './components/product/product-read/product-
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule,
+    MatTableModule
+
 
 
   ],

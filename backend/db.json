@@ -34,6 +34,11 @@
       "name": "Lápis Preto",
       "price": "2.50",
       "id": 7
+    },
+    {
+      "name": "Borracha",
+      "price": "1,05",
+      "id": 8
     }
   ]
 }

@@ -1,7 +1,29 @@
 <mat-card class="home mat-elevation-z3">
-    <mat-card-title class="title">
-        Bem Vindo!
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Sistema para exemplificar a construção de um cadastro em Angular
-            </mat-card-subtitle>
+    <mat-card-title class="title"></mat-card-title>
+    <mat-card-subtitle class="subtitle"></mat-card-subtitle>
+    
+    <mat-card-content>
+      <br /><br /><br />
+    
+      Olá
+      <div *ngFor="let prestador of prestadores">
+        <p>Nome: {{ prestador.nome }}</p>
+        <p>Região: {{ prestador.regiao }}</p>
+      </div>
+      
+     
+      
+      <!-- Adicione o mat-paginator depois da tabela -->
+      <mat-paginator [length]="totalPrestadores" [pageSize]="itensPorPagina" [pageIndex]="paginaAtual" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+
+         </mat-paginator>
+         <mat-paginator [length]="100"
+         [pageSize]="10"
+         [pageSizeOptions]="[5, 10, 25, 100]"
+         aria-label="Select page">
+</mat-paginator>
+
+    
+        </mat-card-content>
+  </mat-card>
+  
